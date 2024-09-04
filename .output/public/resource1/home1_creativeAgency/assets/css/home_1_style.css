@@ -866,13 +866,13 @@ html {
 }
 
 /* --------------- services st1 --------------- */
-.tc-services-st1 {
+/* .tc-services-st1 {
   position: relative;
   padding: 150px 0;
   background-color: #151515;
   color: #fff;
   overflow: hidden;
-}
+} */
 
 .tc-services-st1 .title p {
   position: relative;

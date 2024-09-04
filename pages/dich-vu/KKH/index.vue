@@ -22,7 +22,7 @@
               </h1>
             </div>
             <div class="col-lg-5">
-              <div class="info mt-100">
+              <div class="info mt-50">
                 <div
                   class="text fsz-16 fw-500"
                   style="color: rgba(0, 0, 0, 0.77)"
@@ -102,7 +102,10 @@
                   class="text fsz-16 mt-30 fw-500"
                   style="color: rgba(0, 0, 0, 0.66)"
                 >
-                  Hành trình tự do tài chính cá nhân bắt đầu từ việc quản lý dòng tiền hợp lý. Với các gói tích luỹ ở các mức kỳ hạn đa dạng, bạn có thể phân bổ nguồn tiền để tối đa hoá lợi tức và đảm bảo khả năng thanh khoản.
+                  Hành trình tự do tài chính cá nhân bắt đầu từ việc quản lý
+                  dòng tiền hợp lý. Với các gói tích luỹ ở các mức kỳ hạn đa
+                  dạng, bạn có thể phân bổ nguồn tiền để tối đa hoá lợi tức và
+                  đảm bảo khả năng thanh khoản.
                 </div>
 
                 <ul class="info-list mt-30">
@@ -197,10 +200,7 @@
               <div class="img mt-5 mt-lg-0">
                 <section class="tc-testimonials-st10">
                   <div class="container" style="padding: 0">
-                    <div
-                      class="content row d-flex"
-                      style="justify-content: flex-end"
-                    >
+                    <div class="content row d-flex">
                       <div class="col-lg-10" style="padding: 0">
                         <div class="interest-rate-card">
                           <div
@@ -496,5 +496,74 @@ export default defineComponent({
     --111,
     linear-gradient(239deg, #c06ae4 9.03%, #4d24c6 85.56%)
   );
+}
+@media (max-width: 768px) {
+  .fsz-50 {
+    font-size: 24px !important;
+  }
+  .fsz-16 {
+    font-size: 14px !important;
+  }
+  .tc-proud .title {
+    line-height: 30px;
+  }
+  .tc-about-st10 .title {
+    font-size: 24px !important;
+    line-height: 30px !important;
+  }
+  .tc-about-st10 .content {
+    font-size: 14px !important;
+  }
+  .tc-services-st1 .service-footer {
+    font-size: 24px !important;
+  }
+  .tc-partner .title {
+    font-size: 24px !important;
+  }
+  .mt-100 {
+    margin-top: 40px !important;
+  }
+  .responsive {
+    gap: 12px;
+  }
+  .text-title {
+    font-size: 14px !important;
+  }
+  .text-time {
+    font-size: 14px !important;
+  }
+  .text-apply {
+    font-size: 14px !important;
+  }
+  .logo-icon {
+    min-width: 50px !important;
+    height: 50px !important;
+  }
+  .tc-testimonials-st10 {
+    padding-top: 0px !important;
+  }
+  .tc-testimonials-st10 .content {
+    color: black;
+    justify-content: center !important;
+    margin-top: 0px !important;
+  }
+  .tc-testimonials-st10 .interest-rate-card {
+    width: 100% !important;
+  }
+  .mb-150 {
+    margin-bottom: 0px !important;
+  }
+  .mt-60 {
+    margin-top: 0px !important;
+  }
+  .mt-50 {
+    margin-top: 12px !important;
+  }
+  .mt-5 {
+    margin-top: 0px !important;
+  }
+  .project-page-st1 .tc-header-st18 {
+    padding-bottom: 20px !important;
+  }
 }
 </style>

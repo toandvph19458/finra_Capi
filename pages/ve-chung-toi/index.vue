@@ -1,10 +1,10 @@
 <template>
   <!--  Start innerHeader  -->
   <header class="tc-innerHeader-st1">
-    <div class="container mt-100">
+    <div class="container mt-40">
       <div class="fs-6 fw-700">Về chúng tôi</div>
       <div class="title col-lg-8 mt-20">
-        <h1 class="fsz-50 text-capitalize fw-600">
+        <h1 class="fsz-50 text-capitalize fw-600 text-responsive">
           Hành trình hướng tới
           <span class="text-gradient-purple">dẫn đầu</span> về nền tảng công
           nghệ đầu tư tài chính
@@ -50,7 +50,7 @@
                 Với đội ngũ chuyên viên giàu kinh nghiệm và chuyên môn
               </div>
               <div class="mt-20">
-                <h1 class="title fsz-50 fw-600">
+                <h1 class="title fsz-50 fw-600 text-responsive">
                   Tự hào mang đến cho khách hàng giải pháp đầu tư tối ưu nhất
                   <span class="text-gradient-purple d-inline"
                     >trên sự nhiệt huyết và trung thực</span
@@ -157,7 +157,9 @@
                 alt=""
                 class="logo"
               />
-              <h2 class="fsz-50 text-capitalize">Giá trị cốt lõi</h2>
+              <h2 class="fsz-50 text-capitalize text-responsive">
+                Giá trị cốt lõi
+              </h2>
             </div>
             <div class="col-lg-6 mt-4 mt-lg-0">
               <p class="text-black fs-20 fw-500">
@@ -180,7 +182,7 @@
               disableOnInteraction: false,
             }"
             :speed="1000"
-            :space-between="80"
+            :space-between="50"
             :initial-slide="vSwiperIndex"
             :breakpoints="{
               1920: { slidesPerView: 4 },
@@ -363,7 +365,7 @@
     <!-- Begin:  partner-->
     <section class="tc-partner mt-100 mb-100">
       <div class="container">
-        <div class="d-flex align-items-center justify-content-between">
+        <!-- <div class="d-flex align-items-center justify-content-between">
           <div>
             <div>
               <a href="#" class="logo">
@@ -407,64 +409,64 @@
             <h3 class="name" style="margin-top: 32px">Phạm Trường Giang</h3>
             <span class="work mt-3">CIO - Chief Investment Officer</span>
           </div>
-        </div>
-        <div class="title mt-150">
+        </div> -->
+        <div class="title mt-100">
           Đối tác đồng hành <span class="text-gradient-green">uy tín</span>
         </div>
         <div class="fw-500 mb-30">
           Được định hướng bởi sứ mệnh dẫn đầu. Đi cùng là những đối tác uy tín
           trên thị trường của FINRA
         </div>
-       <div class="row mt-100">
-        <div
-          class="col-12 col-lg-4 d-flex flex-column align-items-center gap-3"
-        >
-          <a class="d-block" href="">
-            <img
-              src="/resource1/home1_creativeAgency/assets/img/ups_logo.svg"
-              alt="youtube icon"
-            />
-          </a>
-          <div class="partner_des">
-            Đối tác chiến lược sản phẩm cùng sàn chứng khoán UP Securities, đem
-            tới sự đa dạng về sản phẩm
-          </div>
-        </div>
-
-        <div
-          class="col-12 col-lg-4 d-flex flex-column align-items-center gap-3"
-        >
-          <a
-            class="d-block"
-            href="https://tornadoinvest.com.vn"
-            target="_blank"
+        <div class="row mt-100 responsive">
+          <div
+            class="col-12 col-lg-4 d-flex flex-column align-items-center gap-3"
           >
-            <img
-              src="/resource1/home1_creativeAgency/assets/img/f1_logo.svg"
-              alt="youtube icon"
-            />
-          </a>
-          <div class="partner_des">
-            F1 trading là công ty dẫn đầu tại Việt Nam trong lĩnh vực đầu tư
-            phái sinh hàng hóa quốc tế với tiềm năng tăng trưởng cao
+            <a class="d-block" href="">
+              <img
+                src="/resource1/home1_creativeAgency/assets/img/ups_logo.svg"
+                alt="youtube icon"
+              />
+            </a>
+            <div class="partner_des">
+              Đối tác chiến lược sản phẩm cùng sàn chứng khoán UP Securities,
+              đem tới sự đa dạng về sản phẩm
+            </div>
           </div>
-        </div>
 
-        <div
-          class="col-12 col-lg-4 d-flex flex-column align-items-center gap-3"
-        >
-          <a class="d-block" href="https://bidv.com.vn" target="_blank">
-            <img
-              src="/resource1/home1_creativeAgency/assets/img/bidv_logo.svg"
-              alt="youtube icon"
-            />
-          </a>
-          <div class="partner_des">
-            Ngân hàng BIDV là đối tác cung cấp giải pháp thanh toán an toàn và
-            bảo mật cho người dùng của Finra
+          <div
+            class="col-12 col-lg-4 d-flex flex-column align-items-center gap-3"
+          >
+            <a
+              class="d-block"
+              href="https://tornadoinvest.com.vn"
+              target="_blank"
+            >
+              <img
+                src="/resource1/home1_creativeAgency/assets/img/f1_logo.svg"
+                alt="youtube icon"
+              />
+            </a>
+            <div class="partner_des">
+              F1 trading là công ty dẫn đầu tại Việt Nam trong lĩnh vực đầu tư
+              phái sinh hàng hóa quốc tế với tiềm năng tăng trưởng cao
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-lg-4 d-flex flex-column align-items-center gap-3"
+          >
+            <a class="d-block" href="https://bidv.com.vn" target="_blank">
+              <img
+                src="/resource1/home1_creativeAgency/assets/img/bidv_logo.svg"
+                alt="youtube icon"
+              />
+            </a>
+            <div class="partner_des">
+              Ngân hàng BIDV là đối tác cung cấp giải pháp thanh toán an toàn và
+              bảo mật cho người dùng của Finra
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
     <!-- End:  partner-->
@@ -563,7 +565,7 @@ export default defineComponent({
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #0A0040;
+  background-color: #0a0040;
   border-radius: 50%;
 }
 .service-card .num-line::after {
@@ -573,7 +575,7 @@ export default defineComponent({
   top: 50%;
   width: calc(100% - 10px);
   height: 1px;
-  background-color: #0A0040;
+  background-color: #0a0040;
 }
 .service-card .num-line .num {
   position: relative;
@@ -598,5 +600,41 @@ export default defineComponent({
   font-size: 14px;
   color: #ababab;
   z-index: 10;
+}
+@media (max-width: 768px) {
+  .fsz-50 {
+    font-size: 24px !important;
+  }
+  .fsz-16 {
+    font-size: 14px !important;
+  }
+  .tc-proud .title {
+    line-height: 30px;
+  }
+  .tc-about-st10 .title {
+    font-size: 24px !important;
+    line-height: 30px !important;
+  }
+  .tc-about-st10 .content {
+    font-size: 14px !important;
+  }
+  .tc-services-st1 .service-footer {
+    font-size: 20px !important;
+  }
+  .tc-partner .title {
+    font-size: 24px !important;
+  }
+  .mt-100 {
+    margin-top: 40px !important;
+  }
+  .responsive {
+    gap: 12px;
+  }
+  .tc-about-st10 .about {
+    padding: 0 !important;
+  }
+  .tc-services-st1 {
+    padding: 0px !important;
+  }
 }
 </style>

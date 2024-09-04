@@ -569,7 +569,7 @@
         Được định hướng bởi sứ mệnh dẫn đầu. Đi cùng là những đối tác uy tín
         trên thị trường của FINRA
       </div>
-      <div class="row mt-100">
+      <div class="row gap-4 gap-md-0 mt-100">
         <div
           class="col-12 col-lg-4 d-flex flex-column align-items-center gap-3"
         >
@@ -577,6 +577,7 @@
             <img
               src="/resource1/home1_creativeAgency/assets/img/ups_logo.svg"
               alt="youtube icon"
+              class="ctm"
             />
           </a>
           <div class="partner_des">
@@ -596,6 +597,7 @@
             <img
               src="/resource1/home1_creativeAgency/assets/img/f1_logo.svg"
               alt="youtube icon"
+              class="ctm"
             />
           </a>
           <div class="partner_des">
@@ -611,6 +613,7 @@
             <img
               src="/resource1/home1_creativeAgency/assets/img/bidv_logo.svg"
               alt="youtube icon"
+              class="ctm"
             />
           </a>
           <div class="partner_des">
@@ -627,16 +630,21 @@
   <section class="tc-faq">
     <div class="container">
       <div class="row">
-        <div class="col-4">
+        <div class="col-12 md-col-4">
           <h1 class="faq-header">Các bạn hỏi?</h1>
           <span class="faq-sub-header">FINRA trả lời</span>
         </div>
-        <div class="col-8">
+        <div class="col-12 md-col-8">
           <div class="dropdown">
-            <div class="dropdown-item">
+            <div class="dropdown-item" @click="toggle = 1">
               <div class="faq-question">
                 <h2>FINRA là ai?</h2>
-                <div class="arrow-icon" style="transform: rotate(45deg);">
+                <div
+                  class="arrow-icon"
+                  :style="{
+                    transform: toggle == 1 ? 'rotate(45deg)' : 'rotate(0)',
+                  }"
+                >
                   <img
                     src="/resource/images/Arrow-right.svg"
                     alt=""
@@ -645,16 +653,21 @@
                 </div>
               </div>
 
-              <div class="faq-answer">
+              <div v-show="toggle == 1" class="faq-answer">
                 Finra là ứng dụng đầu tư và quản lý tài chính thông minh giúp
                 bạn dễ dàng tích lũy, đầu tư và quản lý tài chính cá nhân để tự
                 tin xây dựng tương lai tài chính vững vàng.
               </div>
             </div>
-            <div class="dropdown-item">
+            <div class="dropdown-item" @click="() => (toggle = 2)">
               <div class="faq-question">
                 <h2>Làm thế nào để mở tài khoản Finra?</h2>
-                <div class="arrow-icon">
+                <div
+                  class="arrow-icon"
+                  :style="{
+                    transform: toggle == 2 ? 'rotate(45deg)' : 'rotate(0)',
+                  }"
+                >
                   <img
                     src="/resource/images/Arrow-right.svg"
                     alt=""
@@ -663,17 +676,22 @@
                 </div>
               </div>
 
-              <div class="faq-answer d-none">
+              <div v-show="toggle == 2" class="faq-answer">
                 Finra là ứng dụng đầu tư và quản lý tài chính thông minh giúp
                 bạn dễ dàng tích lũy, đầu tư và quản lý tài chính cá nhân để tự
                 tin xây dựng tương lai tài chính vững vàng.
               </div>
             </div>
 
-            <div class="dropdown-item">
+            <div class="dropdown-item" @click="() => (toggle = 3)">
               <div class="faq-question">
                 <h2>Finra có uy tín không?</h2>
-                <div class="arrow-icon">
+                <div
+                  class="arrow-icon"
+                  :style="{
+                    transform: toggle == 3 ? 'rotate(45deg)' : 'rotate(0)',
+                  }"
+                >
                   <img
                     src="/resource/images/Arrow-right.svg"
                     alt=""
@@ -682,7 +700,7 @@
                 </div>
               </div>
 
-              <div class="faq-answer d-none">
+              <div v-show="toggle == 3" class="faq-answer">
                 Finra là ứng dụng đầu tư và quản lý tài chính thông minh giúp
                 bạn dễ dàng tích lũy, đầu tư và quản lý tài chính cá nhân để tự
                 tin xây dựng tương lai tài chính vững vàng.
@@ -704,14 +722,16 @@ export default defineComponent({
   components: {},
   setup(props, ctx) {
     const active = ref(1);
+    const toggle = ref(1);
 
     return {
       active,
+      toggle,
     };
   },
 });
 </script>
-<style>
+<style scoped>
 .tc-background {
   padding-top: 160px;
 }
@@ -789,7 +809,171 @@ export default defineComponent({
   letter-spacing: 0.2px;
 }
 
-/* Start::  tc-testimonials-st10*/
+@media only screen and (min-width: 1200px) and (max-width: 1710px) {
+  .info h1 {
+    font-size: 70px !important;
+  }
+}
 
-/* End::  tc-testimonials-st10*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+}
+
+@media only screen and (max-width: 768px) {
+  .tc-testimonials-st10 {
+    padding-top: 60px;
+  }
+
+  .tc-background {
+    padding-top: 60px;
+  }
+
+  /* Start:: product list*/
+  .products {
+    padding: 60px 0;
+  }
+
+  .sub-title,
+  .content-heading {
+    font-size: 24px !important;
+    font-weight: 600;
+    line-height: 1.4; /* 145% */
+  }
+
+  .tc-testimonials-st10 .interest-rate-card {
+    width: 100%;
+  }
+
+  .end-content {
+    margin-top: 60px;
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .content {
+    font-size: 14px !important;
+    margin-top: 30px;
+  }
+
+  .title-outstanding-platform ul li {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .content-outstanding-platform {
+    font-size: 14px !important;
+    line-height: 1.4;
+  }
+
+  .products .products__header h1 {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .products .products__header img {
+    width: 80px;
+    height: 36px;
+  }
+
+  .products .products__title {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 60px;
+  }
+
+  .products .products__title h1 {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .products .products__title span {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-top: 8px;
+  }
+
+  .products .products__list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 240px;
+    margin: 60px 0 240px;
+  }
+
+  .products .products__item-content__title h2 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .products .products__item-content__title span {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .products .products__item-content__date h2 {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .products .products__item-content__date span {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .products__footer {
+    padding-top: 0;
+  }
+
+  .tc-partner .title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .tc-partner.mt-100 {
+    margin-top: 0 !important;
+  }
+
+  .ctm {
+    width: 210px !important;
+    height: 48px !important;
+    object-fit: contain;
+  }
+
+  .partner_des {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+  }
+
+  .tc-partner {
+    margin: 0 0 60px !important;
+  }
+
+  .tc-faq {
+    background-color: #d9faff;
+    padding: 60px 0;
+    margin-bottom: 60px;
+  }
+
+  .tc-faq .faq-header {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .tc-faq .faq-sub-header {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+}
+@media (max-width: 768px) {
+  .tc-header-st1 .info h1 {
+    font-size: 24px !important;
+  }
+  .tc-header-st1 .info h1 span {
+    padding-top: 0px !important;
+  }
+}
 </style>

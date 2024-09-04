@@ -1,13 +1,13 @@
 <template>
   <div class="finra-slider">
+    <!-- :autoplay="{
+				delay: 2500,
+				disableOnInteraction: false,
+			}" -->
     <swiper
       :modules="[SwiperNavigation, SwiperAutoplay]"
       :slides-per-view="1"
       :loop="true"
-      :autoplay="{
-        delay: 2500,
-        disableOnInteraction: false,
-      }"
       :speed="1000"
       :space-between="0"
       :initial-slide="vSwiperIndex"
@@ -75,8 +75,8 @@
           </div>
         </header>
       </swiper-slide> -->
-      <!-- <swiper-slide>
-        <header
+      <swiper-slide>
+        <div
           class="tc-header-st1"
           style="
             background-image: url('/resource1/home1_creativeAgency/assets/img/slider-2.png');
@@ -84,7 +84,7 @@
         >
           <div class="container">
             <div class="row gx-lg-0">
-              <div class="col-lg-8 pb-120">
+              <div class="col-lg-8 pb-100">
                 <div class="info text-white">
                   <a href="/tuyen-dung">
                     <h6 class="text-black">
@@ -95,6 +95,13 @@
                   <a href="/tuyen-dung">
                     <h1 style="color: black !important">
                       Tìm kiếm
+                      <!-- <div
+                      class="d-inline"
+                        ><img
+                          src="/resource/images/Search.svg"
+                          alt=""
+                          class="img-cover"
+                      /></div> -->
                       <br />
                       <span
                         class="text-right"
@@ -106,13 +113,15 @@
                         Nhân tài mới cho Finra
                       </span>
                     </h1>
-                    <div class="text fsz-16 col-lg-9 text-black">
+                    <div
+                      class="text fsz-16 col-lg-9 text-black text-responsive-mb"
+                    >
                       Cùng Finra kiến tạo giải pháp đầu tư tài chính, mở lối
                       tương lai tài chính vững vàng cho người Việt
                     </div>
                   </a>
 
-                  <div class="btns mt-50 d-flex align-items-center">
+                  <div class="btns mt-30 d-flex align-items-center">
                     <button class="primary-btn">
                       <a
                         href="/tuyen-dung"
@@ -137,9 +146,141 @@
               </div>
             </div>
           </div>
-        </header>
-      </swiper-slide> -->
+        </div>
+      </swiper-slide>
       <swiper-slide>
+        <div
+          class="tc-header-st1"
+          style="
+            background-image: url('/resource1/home1_creativeAgency/assets/img/z5782501350445_a53212fbf0b986f98b4f204405e216be.jpg');
+          "
+        >
+          <div class="container">
+            <div class="row gx-lg-0">
+              <div class="col-lg-8">
+                <div class="info text-white">
+                  <a href="/tuyen-dung">
+                    <h6 class="text-black">
+                      Ứng dụng đầu tư và quản lý tài chính thông minh
+                    </h6>
+                  </a>
+                  <a href="/tuyen-dung">
+                    <h1 style="color: black !important">
+                      <span
+                        class="text-right text-active"
+                        style="padding-left: 0"
+                      >
+                        FINRA
+                      </span>
+                      <!-- <div
+                      class="d-inline"
+                        ><img
+                          src="/resource/images/Search.svg"
+                          alt=""
+                          class="img-cover"
+                      /></div> -->
+                      <br />
+                      Về chúng tôi
+                    </h1>
+                    <div
+                      class="text fs-16 col-lg-9 text-black mt-4 text-responsive-mb"
+                    >
+                      Kết nối công nghệ và sáng tạo giúp bạn dễ dàng tích luỹ,
+                      đầu tư và quản lý chi tiêu, từng bước xây dựng tương lai
+                      tài chính vững vàng
+                    </div>
+                  </a>
+
+                  <div class="btns mt-30 d-flex align-items-center">
+                    <button class="primary-btn">
+                      <a
+                        href="/tuyen-dung"
+                        class="d-flex align-items-center gap-2 justify-content-center"
+                      >
+                        Tìm hiểu thêm
+                        <span class="bg-custom-icon">
+                          <i class="fa-solid fa-arrow-right custom-icon"></i>
+                        </span>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div
+          class="tc-header-st1"
+          style="
+            background-image: url('/resource1/home1_creativeAgency/assets/img/z5782510523412_deb130aada5f75e0c304bf28d1069751.jpg');
+          "
+        >
+          <div class="container">
+            <div class="row gx-lg-0">
+              <div class="col-lg-8 pb-100">
+                <div class="info text-white">
+                  <a href="/tuyen-dung">
+                    <h6 class="text-black">
+                      Trải nghiệm đặc biệt tạo nên một
+                      <span style="color: #b65ffc">FINRA</span> ưu việt
+                    </h6>
+                  </a>
+                  <a href="/tuyen-dung">
+                    <h1 style="color: black !important">
+                      ĐẦU TƯ
+                      <span
+                        class="text-right text-active"
+                        style="
+                          padding-left: 0;
+                          display: inline-block;
+                          font-style: italic;
+                          font-weight: 500;
+                        "
+                      >
+                        DỄ DÀNG
+                      </span>
+                      <!-- <div
+                      class="d-inline"
+                        ><img
+                          src="/resource/images/Search.svg"
+                          alt=""
+                          class="img-cover"
+                      /></div> -->
+                      <br />
+                      * MỞ LỐI
+                      <br />
+                      TƯƠNG LAI
+                    </h1>
+                    <div
+                      class="text fs-16 col-lg-9 text-black mt-4 text-responsive-mb"
+                    >
+                      Đừng để số tiền nhàn rỗi "ngủ quên". Có Finra, đầu tư tài
+                      chính dễ dàng giúp bạn tự tin mở lối tương lai!
+                    </div>
+                  </a>
+
+                  <div class="btns mt-30 d-flex align-items-center">
+                    <button class="primary-btn">
+                      <a
+                        href="/dang-nhap"
+                        class="d-flex align-items-center gap-2 justify-content-center"
+                      >
+                        Đăng nhập
+                        <span class="bg-custom-icon">
+                          <i class="fa-solid fa-arrow-right custom-icon"></i>
+                        </span>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <!-- <swiper-slide>
         <header
           class="tc-header-st1"
           style="
@@ -196,7 +337,7 @@
             </div>
           </div>
         </header>
-      </swiper-slide>
+      </swiper-slide> -->
     </swiper>
 
     <!-- slider nav btn -->
@@ -275,13 +416,24 @@ export default defineComponent({
   justify-content: start !important;
 }
 
+.finra-slider .text-active {
+  background: linear-gradient(239deg, #c06ae4 9.03%, #4d24c6 85.56%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media screen and (max-width: 991px) {
   .finra-slider .finra-btn {
-    bottom: 40px !important;
+    /* bottom: 30px !important; */
+    display: none;
   }
 
   .finra-slider .justify-content-center {
     justify-content: center !important;
+  }
+  .text-responsive-mb {
+    width: 200px;
   }
 }
 </style>

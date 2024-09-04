@@ -8,7 +8,8 @@
           <h1 class="fsz-50 fw-600" style="line-height: normal">
             Chúng tôi luôn tìm kiếm những thành viên
             <span class="text-gradient-purple">ưu tú</span> đồng hành cùng tạo
-            nên <span class="text-gradient-purple">giá trị vững chắc.</span>
+            nên
+            <span class="text-gradient-purple">giá trị vững chắc.</span>
           </h1>
         </div>
         <div class="info mt-30">
@@ -107,9 +108,7 @@
             </div>
           </div>
           <div class="d-flex flex-column" style="gap: 32px">
-            <div
-              class="d-flex align-items-center justify-content-between"
-            >
+            <div class="d-flex align-items-center justify-content-between">
               <div class="d-flex align-items-center" style="gap: 60px">
                 <p class="text-time" style="width: 24.77px">01</p>
                 <div class="logo-icon">
@@ -126,9 +125,7 @@
               </div>
               <button class="text-apply">Ứng tuyển</button>
             </div>
-            <div
-              class="d-flex align-items-center justify-content-between"
-            >
+            <div class="d-flex align-items-center justify-content-between">
               <div class="d-flex align-items-center" style="gap: 60px">
                 <p class="text-time">02</p>
                 <div class="logo-icon">
@@ -145,9 +142,7 @@
               </div>
               <button class="text-apply">Ứng tuyển</button>
             </div>
-            <div
-              class="d-flex align-items-center justify-content-between"
-            >
+            <div class="d-flex align-items-center justify-content-between">
               <div class="d-flex align-items-center" style="gap: 60px">
                 <p class="text-time">03</p>
                 <div class="logo-icon">
@@ -166,9 +161,7 @@
               </div>
               <button class="text-apply">Ứng tuyển</button>
             </div>
-            <div
-              class="d-flex align-items-center justify-content-between"
-            >
+            <div class="d-flex align-items-center justify-content-between">
               <div class="d-flex align-items-center" style="gap: 60px">
                 <p class="text-time">04</p>
                 <div class="logo-icon">
@@ -185,9 +178,7 @@
               </div>
               <button class="text-apply">Ứng tuyển</button>
             </div>
-            <div
-              class="d-flex align-items-center justify-content-between"
-            >
+            <div class="d-flex align-items-center justify-content-between">
               <div class="d-flex align-items-center" style="gap: 60px">
                 <p class="text-time">05</p>
                 <div class="logo-icon">
@@ -206,9 +197,7 @@
               </div>
               <button class="text-apply">Ứng tuyển</button>
             </div>
-            <div
-              class="d-flex align-items-center justify-content-between"
-            >
+            <div class="d-flex align-items-center justify-content-between">
               <div class="d-flex align-items-center" style="gap: 60px">
                 <p class="text-time">06</p>
                 <div class="logo-icon">
@@ -379,7 +368,7 @@ onMounted(async () => {
   text-decoration: underline;
 }
 .logo-icon {
-  width: 150px;
+  min-width: 150px;
   height: 150px;
   background: #000;
   display: flex;
@@ -401,5 +390,68 @@ onMounted(async () => {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.2px;
+  min-width: 180px;
+}
+
+/* ZOOM 100% -> 150% */
+@media only screen and (min-width: 1200px) and (max-width: 1710px) {
+  .tc-careers-st19 {
+    padding: 80px 0;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tc-careers-st19 {
+    padding: 80px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .tc-careers-st19 {
+    padding: 80px 0;
+  }
+}
+@media (max-width: 768px) {
+  .fsz-50 {
+    font-size: 24px !important;
+  }
+  .fsz-16 {
+    font-size: 14px !important;
+  }
+  .tc-proud .title {
+    line-height: 30px;
+  }
+  .tc-about-st10 .title {
+    font-size: 24px !important;
+    line-height: 30px !important;
+  }
+  .tc-about-st10 .content {
+    font-size: 14px !important;
+  }
+  .tc-services-st1 .service-footer {
+    font-size: 24px !important;
+  }
+  .tc-partner .title {
+    font-size: 24px !important;
+  }
+  .mt-100 {
+    margin-top: 40px !important;
+  }
+  .responsive {
+    gap: 12px;
+  }
+  .text-title {
+    font-size: 14px !important;
+  }
+  .text-time {
+    font-size: 14px !important;
+  }
+  .text-apply {
+    font-size: 14px !important;
+  }
+  .logo-icon {
+    min-width: 50px !important;
+    height: 50px !important;
+  }
 }
 </style>
